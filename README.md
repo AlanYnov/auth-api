@@ -43,9 +43,9 @@ Créez un fichier .env à la racine à partir du fichier .env.example. Puis, con
 
 ### Utilisateurs
 
-- `GET /api/user/{uid}`: Permet à un administrateur de récupérer les informations d'un utilisateur en utilisant son UID.
-- `GET /api/user/me`: Permet à n'importe quel utilisateur de récupérer les informations de son compte.
-- `PUT /api/user/{uid}`: Permet à un administrateur de modifier les informations d'un utilisateur en utilisant son UID.
+- `GET /api/account/{uid}`: Permet à un administrateur de récupérer les informations d'un utilisateur en utilisant son UID.
+- `GET /api/account/me`: Permet à n'importe quel utilisateur de récupérer les informations de son compte.
+- `PUT /api/account/{uid}`: Permet à un administrateur de modifier les informations d'un utilisateur en utilisant son UID.
 
 ## Middleware
 
