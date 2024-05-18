@@ -2,7 +2,7 @@
 
 Cette application permet de créer et d'authentifier des utilisateurs ainsi que les autoriser via un JWT pour leur permettre d'accéder à des ressources utilisateurs.
 
-*Je suis en voyage en Corée du Sud, je n'ai pas eu le temps de faire la documentation avec swagger, il faudra se contenter de la documentation écrite sur ce README. Je reste néanmoins disponible pour toute question.*
+*NB : Je suis en voyage en Corée du Sud, je n'ai pas eu le temps de faire la documentation avec swagger cette fois-ci, il faudra se contenter de la documentation écrite sur ce README. Je reste néanmoins disponible pour toute question.*
 
 ## Configuration
 
