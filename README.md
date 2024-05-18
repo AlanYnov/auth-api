@@ -1,6 +1,8 @@
 # Application d'authentification utilisateur
 
-Cette application permet aux utilisateurs de s'inscrire, de se connecter et d'afficher la liste des utilisateurs enregistrés.
+Cette application permet de créer et d'authentifier des utilisateurs ainsi que les autoriser via un JWT pour leur permettre d'accéder à des ressources utilisateurs.
+
+*Je suis en voyage en Corée du Sud, je n'ai pas eu le temps de faire la documentation avec swagger, il faudra se contenter de la documentation écrite sur ce README. Je reste néanmoins disponible pour toute question.*
 
 ## Configuration
 
@@ -43,11 +45,13 @@ Créez un fichier .env à la racine à partir du fichier .env.example. Puis, con
 
 - `GET /api/user/{uid}`: Permet à un administrateur de récupérer les informations d'un utilisateur en utilisant son UID.
 - `GET /api/user/me`: Permet à n'importe quel utilisateur de récupérer les informations de son compte.
-- `GET /api/user/{uid}`: Permet à un administrateur de modifier les informations d'un utilisateur en utilisant son UID.
+- `PUT /api/user/{uid}`: Permet à un administrateur de modifier les informations d'un utilisateur en utilisant son UID.
 
 ## Middleware
 
 - `authJWT`: Middleware pour vérifier la validité du token JWT fourni dans le header d'autorisation. En cas de succès, il ajoute l'objet utilisateur à la demande (`req.user`).
+- `isAdmin`: Middleware pour vérifier si un utilisateur possède le rôle administrateur (ROLE_ADMIN).
+- `rateLimit`: Middleware pour tester le nombre de tentative sur l'authentification d'un utilisateur. Renvoie un 429 en cas d'excès de tentative.
 
 ## Structure du projet
 
