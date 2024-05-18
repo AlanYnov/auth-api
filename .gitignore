@@ -1,5 +1,6 @@
 node_modules
 .env
 controllers
-middlewares
+middlewares/isAdmin.js
+middlewares/rateLimit.js
 routes
